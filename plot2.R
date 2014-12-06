@@ -6,3 +6,4 @@ plot(strptime(dt$DateTime, "%d/%m/%Y %H:%M:%S"), as.numeric(dt$Global_active_pow
 dev.copy(png, file = "plot2.png")
 dev.off()
 
+

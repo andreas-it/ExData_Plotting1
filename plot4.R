@@ -1,5 +1,5 @@
 library(data.table)
-dt = fread("/home/andrea/Progetti/R/ExData_Plotting1/household_power_consumption.txt", header=TRUE, sep=";")
+dt = fread("household_power_consumption.txt", header=TRUE, sep=";")
 dt = dt = dt[Date == c("1/2/2007","2/2/2007"),]
 dt$DateTime = paste(dt$Date, dt$Time)
 
@@ -20,6 +20,6 @@ par(new=F)
 
 plot(strptime(dt$DateTime, "%d/%m/%Y %H:%M:%S"), as.numeric(dt$Global_reactive_power), type='l', xlab="", ylab="Global reactive power") 
 
-dev.copy(png, file = "/home/andrea/Progetti/R/ExData_Plotting1/plot4.png")
+dev.copy(png, file = "plot4.png")
 dev.off()
 

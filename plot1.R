@@ -5,3 +5,4 @@ hist(as.numeric(dt$Global_active_power), main="Global active power", xlab="Globa
 dev.copy(png, file = "plot1.png")
 dev.off()
 
+
